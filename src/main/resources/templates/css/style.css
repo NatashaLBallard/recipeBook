@@ -1,3 +1,7 @@
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
 /*Responsive Resizing + Rounded Borders for Pictures */
 
 img {
@@ -6,19 +10,44 @@ img {
     border-radius: 8px;
 }
 
-text{
-    font-family: sans-serif;
-}
-
 /*Rounded Borders for Pictures */
 img:hover {
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
 }
 
 /*Thumbnail Design for Flags*/
-
 img.img-thumbnail {
     border-radius: 8px;
     width: 30px;
     height: 30px;
+}
+
+img.img-grid{
+    max-width: 50%;
+    max-height: auto;
+}
+
+
+.jumbotron{
+    background-image: url("http://www.puzzledepo.com/ProductImages/108007/original/grafika-t-00145-world-map-in-spices--43.jpg");
+
+}
+
+.jumbotron h1{
+    color: #ffffff;
+}
+
+.jumbotron p{
+    color: #ffffff;
+}
+
+.jumbotron background-image{
+
+}
+
+.card {
+    display:inline-block;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
 }
