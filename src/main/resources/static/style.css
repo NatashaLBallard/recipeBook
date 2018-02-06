@@ -1,0 +1,24 @@
+/*Responsive Resizing + Rounded Borders for Pictures */
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 8px;
+}
+
+text{
+    font-family: sans-serif;
+}
+
+/*Rounded Borders for Pictures */
+img:hover {
+    box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*Thumbnail Design for Flags*/
+
+img.img-thumbnail {
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+}
