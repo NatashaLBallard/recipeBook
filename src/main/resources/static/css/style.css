@@ -10,12 +10,14 @@ h1.h1index{
     color:#ffffff;
     align-content: center;
     text-align: center;
+    font-size:75px;
 }
 
 p.index{
     color:#ffffff;
     align-content: center;
     text-align: center;
+    font-size:50px;
 }
 
 /*Responsive Resizing + Rounded Borders for Pictures */
@@ -51,11 +53,15 @@ img.img-grid{
 .jumbotron h1{
     color: #ffffff;
     text-align: center;
+    background-color: grey;
+    font-size:100px;
 }
 
 .jumbotron p{
     color: #ffffff;
     text-align: center;
+    background-color: #FF814E;
+    font-size:25px;
 }
 
 
@@ -77,10 +83,20 @@ img.img-grid{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size:100px;
 }
 
 table, th, td{
     text-align: center;
     border:2px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FF814E;
 }
 

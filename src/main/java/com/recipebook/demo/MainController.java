@@ -45,4 +45,9 @@ public class MainController {
     public String barapage (){
         return "baraRecipe";
     }
+
+    @RequestMapping("/pumpkinricenoodles")
+    public String pumpkinricenoodlespage (){
+        return "pumpkinRiceNoodlesRecipe";
+    }
 }
