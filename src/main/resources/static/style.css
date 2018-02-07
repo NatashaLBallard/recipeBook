@@ -1,3 +1,23 @@
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1.h1index{
+    color:#ffffff;
+    align-content: center;
+    text-align: center;
+}
+
+p.index{
+    color:#ffffff;
+    align-content: center;
+    text-align: center;
+}
+
 /*Responsive Resizing + Rounded Borders for Pictures */
 
 img {
@@ -6,19 +26,62 @@ img {
     border-radius: 8px;
 }
 
-text{
-    font-family: sans-serif;
-}
-
 /*Rounded Borders for Pictures */
 img:hover {
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
 }
 
 /*Thumbnail Design for Flags*/
-
 img.img-thumbnail {
     border-radius: 8px;
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
 }
+
+img.img-grid{
+    max-width: 50%;
+    max-height: auto;
+}
+
+
+.jumbotron{
+    background-image: url("http://www.puzzledepo.com/ProductImages/108007/original/grafika-t-00145-world-map-in-spices--43.jpg");
+
+}
+
+.jumbotron h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+.jumbotron p{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.card {
+    display:inline-block;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+}
+
+.bg{
+    background-image: url("https://nfs.tamu.edu/wp-content/uploads/sites/9/2016/09/FDIP-Background-1.jpg");
+
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table, th, td{
+    text-align: center;
+    border:2px;
+}
+

@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:=www.thymeleaf.org">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
     <title>Croque Madame Recipe</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
 </head>
 <body>
 
+<!--Start of NAVIGATION MENU-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">WORLDLY RECIPES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="recipeIndex.html">Recipes<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--End of NAVIGATION MENU-->
+
 <h1>Croque Madame</h1>
 
 <img src="https://showmetheyummy.com/wp-content/uploads/2015/03/Croque-Madame-Cut.jpg" alt="croque madame recipe picture"/>
+
+<br/><br/>
+<p><em>Serves 2</em></p>
+
+<table>
+    <tr>
+        <th>Prep Time</th>
+        <th>Cook Time</th>
+        <th>Extra Time</th>
+        <th>Total Time</th>
+    </tr>
+    <tr>
+        <td>5 min</td>
+        <td>5 min</td>
+        <td>5 min</td>
+        <td>15 min</td>
+    </tr>
+</table>
+
+<br/>
 
 <h2>Ingredients</h2>
 <ul>
@@ -50,7 +90,7 @@
 
 <h3>Brown the Sandwich</h3>
 <ol>
-    <li>In a small saucepan, melt remaining the 4 tablespoons butter.
+    <li>In a small saucepan, melt remaining the 4 tablespoons butter.</li>
     <li>Brush the sandwiches on both sides with butter, making sure that the edges are well covered. </li>
     <li>If you're using a griddle, place cheese side down, close the griddle and cook until the bread is toasted dark and cheese is leaking out and bubbling.
         <br/>If you're using a skillet, place sandwiches cheese side down and cook on stove top until well browned, then turn and brown again.</li>
@@ -64,8 +104,11 @@
     <li>Serve hot.</li>
 </ol>
 
-<img src="http://flags.fmcdn.net/data/flags/w580/fr.png" alt="France Flag" />
+<!-- <img src="http://flags.fmcdn.net/data/flags/w580/fr.png" alt="France Flag" />
+ -->
 
+<hr/>
+<h5>Brought to you by <a href="https://en.wikipedia.org/wiki/France" target="_blank"><img src="http://flags.fmcdn.net/data/flags/w580/fr.png" class="img-thumbnail" alt="France Flag" /> </a></h5>
 
 </body>
 </html>

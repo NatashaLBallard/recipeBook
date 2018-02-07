@@ -34,8 +34,8 @@ img:hover {
 /*Thumbnail Design for Flags*/
 img.img-thumbnail {
     border-radius: 8px;
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
 }
 
 img.img-grid{
@@ -51,10 +51,12 @@ img.img-grid{
 
 .jumbotron h1{
     color: #ffffff;
+    text-align: center;
 }
 
 .jumbotron p{
     color: #ffffff;
+    text-align: center;
 }
 
 
@@ -66,7 +68,7 @@ img.img-grid{
 }
 
 .bg{
-background-image: url("https://nfs.tamu.edu/wp-content/uploads/sites/9/2016/09/FDIP-Background-1.jpg");
+    background-image: url("https://nfs.tamu.edu/wp-content/uploads/sites/9/2016/09/FDIP-Background-1.jpg");
 
 
     /* Full height */
@@ -76,5 +78,10 @@ background-image: url("https://nfs.tamu.edu/wp-content/uploads/sites/9/2016/09/F
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+table, th, td{
+    text-align: center;
+    border:2px;
 }
 

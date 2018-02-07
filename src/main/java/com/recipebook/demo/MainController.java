@@ -8,7 +8,7 @@ public class MainController {
 
     @RequestMapping("/")
     public String index (){
-        return "index";
+        return "../main/resources/templates/index.html";
     }
 
     @RequestMapping("/crabcake")
@@ -29,5 +29,10 @@ public class MainController {
     @RequestMapping("/jerkchicken")
     public String jerkchickenpage (){
         return "jerkChickenRecipe";
+    }
+
+    @RequestMapping("/bara")
+    public String barapage (){
+        return "baraRecipe";
     }
 }
