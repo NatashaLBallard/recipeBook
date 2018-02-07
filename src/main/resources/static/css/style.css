@@ -1,9 +1,11 @@
 body{
     font-family: 'Comfortaa', cursive;
+
 }
 
 body, html {
     height: 100%;
+    margin: 25px;
 }
 
 h1.h1index{
@@ -100,3 +102,17 @@ table, th, td{
     background-color: #FF814E;
 }
 
+.h1-recipe {
+    text-transform: capitalize;
+}
+
+.grid-center{
+    text-align: center;
+}
+
+.time-columns{
+    -webkit-column-width: 15px; /* Chrome, Safari, Opera */
+    -moz-column-width: 15px; /* Firefox */
+    column-width: 25px;
+    text-align: center;
+}
