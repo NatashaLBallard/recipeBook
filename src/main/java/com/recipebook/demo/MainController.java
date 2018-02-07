@@ -1,4 +1,4 @@
-package com.crabcakerecipe.demo;
+package com.recipebook.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +8,12 @@ public class MainController {
 
     @RequestMapping("/")
     public String index (){
-        return "../main/resources/templates/index.html";
+        return "index";
+    }
+
+    @RequestMapping("/recipeindex")
+    public String recipeindex (){
+        return "recipeIndex";
     }
 
     @RequestMapping("/crabcake")
@@ -29,6 +34,11 @@ public class MainController {
     @RequestMapping("/jerkchicken")
     public String jerkchickenpage (){
         return "jerkChickenRecipe";
+    }
+
+    @RequestMapping("/croquemadame")
+    public String croquemadamepage (){
+        return "croqueMadameRecipe";
     }
 
     @RequestMapping("/bara")

@@ -7,13 +7,14 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
 </head>
 <body>
 
 <!--Start of NAVIGATION MENU-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">WORLDLY RECIPES</a>
+    <a class="navbar-brand" th:href="@{/}">WORLDLY RECIPES</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="recipeIndex.html">Recipes</a>
+                <a class="nav-link" th:href="@{recipeindex}">Recipes</a>
             </li>
         </ul>
     </div>
@@ -35,13 +36,6 @@
 <div class="bg">
     <h1 class="h1index">WORLDLY RECIPES</h1>
     <h1 class="h1index">Taste the World</h1>
-
-
-
-    <p class="lead">From simple breakfasts to delectable desserts, Worldly Recipes wants to help you taste the world right in your kitchen.</p>
-
-    <p><em>Ready to become the five-star chef amongst your friends and family? </em></p>
-
 
 </div>
 <!--<h1>Recipe Index</h1>-->

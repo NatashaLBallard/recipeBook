@@ -2,18 +2,19 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Index</title>
-
+    <title>Recipe Index</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+
 </head>
 <body>
 
 <!--Start of NAVIGATION MENU-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">WORLDLY RECIPES</a>
+    <a class="navbar-brand" th:href="@{/}">WORLDLY RECIPES</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,10 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" th:href="@{/}">Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="recipeIndex.html">Recipes<span class="sr-only">(current)</span></a>
+                <a class="nav-link" th:href="@{recipeindex}">Recipes<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
@@ -35,89 +36,71 @@
 <div class="jumbotron background-image">
     <h1 class="display-4">Worldly Recipes</h1>
     <p class="lead index">From simple breakfasts to delectable desserts, Worldly Recipes wants to help you taste the world right in your kitchen.</p>
-    <hr class="my-4">
+    <hr class="my-4" />
     <p><em>Ready to become the five-star chef amongst your friends and family? </em></p>
 </div>
 
+
 <div>
     <div class="card" style="width: 18rem;">
-        <a href="crabCakeRecipe.html"><img class="card-img-top" src="http://cdn-image.foodandwine.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/201201-xl-zimmern-crab-cakes.jpg?itok=dh7Nm6N4" alt="Card image cap"></a>
+        <a th:href="@{crabcake}"><img class="card-img-top" src="http://cdn-image.foodandwine.com/sites/default/files/styles/4_3_horizontal_-_1200x900/public/201201-xl-zimmern-crab-cakes.jpg?itok=dh7Nm6N4" alt="Card image cap" /></a>
         <div class="card-body">
-            <a href="crabCakeRecipe.html"><h5 class="card-title">Crab Cake</h5></a>
+            <a th:href="@{crabcake}"><h5 class="card-title">Crab Cake</h5></a>
             <h6 class="card-title">USA - Maryland</h6>
             <p class="card-text">Indulge in this succulent state food.</p>
         </div>
     </div>
 
     <div class="card" style="width: 18rem;">
-        <a href="croqueMadameRecipe.html"><img class="card-img-top" src="https://showmetheyummy.com/wp-content/uploads/2015/03/Croque-Madame-Cut.jpg" alt="Card image cap"></a>
+        <a th:href="@{croquemadame}"><img class="card-img-top" src="https://showmetheyummy.com/wp-content/uploads/2015/03/Croque-Madame-Cut.jpg" alt="Card image cap"/></a>
         <div class="card-body">
-            <a href="croqueMadameRecipe.html"><h5 class="card-title">Croque Madame</h5></a>
+            <a th:href="@{croquemadame}"><h5 class="card-title">Croque Madame</h5></a>
             <h6 class="card-title">France</h6>
             <p class="card-text">A classic turned into a quick snack.</p>
         </div>
     </div>
-
+</div>
+<div>
 
     <div class="card" style="width: 18rem;">
-        <a href="golabJamunRecipe.html"><img class="card-img-top" src="http://cdn2.foodviva.com/static-content/food-images/diwali-recipes/gulab-jamun-milk-powder/gulab-jamun-milk-powder.jpg" alt="Golab Jamun recipe picture"/></a>
+        <a th:href="@{golabjamun}"><img class="card-img-top" src="http://cdn2.foodviva.com/static-content/food-images/diwali-recipes/gulab-jamun-milk-powder/gulab-jamun-milk-powder.jpg" alt="Golab Jamun recipe picture"/></a>
         <div class="card-body">
-            <a href="golabJamunRecipe.html"><h5 class="card-title">Golab Jamun</h5></a>
+            <a th:href="@{golabjamun}"><h5 class="card-title">Golab Jamun</h5></a>
             <h6>India</h6>
             <p class="card-text">Dunkin Donut's Muchkins have nothing on this dessert.</p>
         </div>
     </div>
 
     <div class="card" style="width: 18rem;">
-        <a href="injeraRecipe.html"><img class="card-img-top" src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2013/6/5/0/CCKitchens_ethiopian-quick-injera-bread-recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1370452351220.jpeg" alt="Card image cap"></a>
+        <a th:href="@{injera}"><img class="card-img-top" src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2013/6/5/0/CCKitchens_ethiopian-quick-injera-bread-recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1370452351220.jpeg" alt="Card image cap"/></a>
         <div class="card-body">
-            <a href="injeraRecipe.html"><h5 class="card-title">Injera</h5></a>
+            <a th:href="@{injera}" ><h5 class="card-title">Injera</h5></a>
             <h6>Ethiopia</h6>
             <p class="card-text">It's not only a bread - it's an eating utensil.</p>
         </div>
     </div>
 
-</div>
 
-
-<div>
     <div class="card" style="width: 18rem;">
-        <a href="jerkChickenRecipe.html"><img class="card-img-top" src="http://2.bp.blogspot.com/-YJkrYYmLb7I/UC2o17Pcn1I/AAAAAAAAIKc/5btxz5shsYE/s1600/Jerk+Chicken3.png" alt="Card image cap"></a>
+        <a th:href="@{jerkchicken}"><img class="card-img-top" src="http://2.bp.blogspot.com/-YJkrYYmLb7I/UC2o17Pcn1I/AAAAAAAAIKc/5btxz5shsYE/s1600/Jerk+Chicken3.png" alt="Card image cap"/></a>
         <div class="card-body">
-            <a href="jerkChickenRecipe.html"><h5 class="card-title">Jerk Chicken</h5></a>
+            <a th:href="@{jerkchicken}"><h5 class="card-title">Jerk Chicken</h5></a>
             <h6>Ethiopia</h6>
             <p class="card-text">Everyone's favorite Caribbean dish.</p>
         </div>
     </div>
 
     <div class="card" style="width: 18rem;">
-        <a href="baraRecipe.html"><img class="card-img-top" src="http://2.bp.blogspot.com/-UtP2F1bzw9E/UkJScdoVwpI/AAAAAAAAAYQ/JpGdw6FPPOU/s1600/DSC00822.JPG" alt="Card image cap"></a>
+        <a th:href="@{bara}"><img class="card-img-top" src="http://2.bp.blogspot.com/-UtP2F1bzw9E/UkJScdoVwpI/AAAAAAAAAYQ/JpGdw6FPPOU/s1600/DSC00822.JPG" alt="Card image cap"/></a>
         <div class="card-body">
-            <a href="baraRecipe.html"><h5 class="card-title">Bara </h5></a>
+            <a th:href="@{bara}"><h5 class="card-title">Bara </h5></a>
             <h6>Nepal</h6>
             <p class="card-text">Healthy vegetarian pancake for any time of the day.</p>
         </div>
     </div>
-
-
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-
 </div>
+
+
+
 </body>
 </html>
